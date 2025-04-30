@@ -12,12 +12,12 @@
       align-items: center;
       height: 100vh;
       margin: 0;
-      background: linear-gradient(135deg, #1e1e2e 0%, #0d0d1a 100%);
+      background-color: #141414;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
+      font-family: 'Arial', sans-serif;
+      color: #fff; /* Set the text color to white */
     }
 
     .container {
@@ -27,140 +27,79 @@
     }
 
     .box {
-      width: 320px;
-      height: 350px;
-      padding: 30px;
+      width: 300px;
+      height: 330px;
+      padding: 20px;
       position: relative;
       text-align: center;
-      background: linear-gradient(145deg, #a50000, #cc0000);
-      border-radius: 20px;
+      background-color: #a20000; /* Update background color */
+      border-radius: 10px;
       transform: perspective(1000px) rotateY(0deg);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 
-                  inset 0 0 15px rgba(255, 255, 255, 0.1),
-                  0 0 20px rgba(177, 0, 0, 0.4);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
       position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .box:before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.03), transparent);
-      transform: rotate(45deg);
-      pointer-events: none;
     }
 
     #text {
-      color: #ffffff;
-      position: relative;
-      z-index: 2;
+      color: #ffffff; /* Set the text color to black (#000) */
     }
 
-    #text i.fa-user {
-      font-size: 40px;
-      margin-bottom: 15px;
-      display: inline-block;
-      color: #ffffff;
-      background: rgba(0, 0, 0, 0.2);
-      width: 80px;
-      height: 80px;
-      line-height: 80px;
-      border-radius: 50%;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    .input-container input {
+      color: #ffffff; /* Set the text color to black (#000) */
     }
 
     .centered-text {
-      color: #ffffff;
-      font-weight: 600;
-      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
-    }
-
-    h6 {
-      font-size: 14px;
-      font-weight: normal;
-      margin: 15px 0;
-      opacity: 0.9;
-      letter-spacing: 0.5px;
+      color: #ffffff; /* Set the text color to black (#000) */
     }
 
     .input-container {
       display: flex;
-      background: rgba(0, 0, 0, 0.2);
-      border-radius: 16px;
-      padding: 5px;
-      gap: 5px;
+      background: #ffffff; /* Update background color */
+      border-radius: 1rem;
+      padding: 0.3rem;
+      gap: 0.3rem;
       max-width: 300px;
       width: 100%;
-      margin: 0 auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .input-container:focus-within {
-      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
-      border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
     .input-container input {
-      border-radius: 12px 0 0 12px;
-      background: rgba(0, 0, 0, 0.4);
+      border-radius: 0.8rem 0 0 0.8rem;
+      background: #000000; /* Update background color */
       width: 89%;
       flex-basis: 75%;
-      padding: 15px;
+      padding: 1rem;
       border: none;
-      color: #ffffff;
-      font-size: 15px;
+      border-left: 2px solid #075e54; /* Update border color */
+      color: #ecf0f1; /* Set text color to light grey */
       transition: all 0.2s ease-in-out;
     }
 
-    .input-container input::placeholder {
-      color: rgba(255, 255, 255, 0.6);
-    }
-
     .input-container input:focus {
+      border-left: 2px solid #075e54;
       outline: none;
-      background: rgba(0, 0, 0, 0.5);
+      box-shadow: inset 13px 13px 10px #075e54, inset -13px -13px 10px #2c3e50;
     }
 
     .input-container button {
       flex-basis: 25%;
-      padding: 12px;
-      background: linear-gradient(to right, #1e9600, #fff200, #ff0000);
-      background-size: 200% auto;
-      font-weight: 600;
-      font-size: 14px;
+      padding: 1rem;
+      background: #25d366; /* Update background color */
+      font-weight: 900;
+      letter-spacing: 0.3rem;
       text-transform: uppercase;
       color: white;
       border: none;
       width: 100%;
-      border-radius: 0 12px 12px 0;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0 1rem 1rem 0;
+      transition: all 0.2s ease-in-out;
     }
 
     .input-container button:hover {
-      background-position: right center;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .input-container button:active {
-      transform: translateY(1px);
+      background: #2980b9; /* Update background color on hover */
     }
 
     #waiting-message {
-      color: #ffffff;
-      margin-top: 15px;
-      font-size: 14px;
+      color: #ffffff; /* Set text color to light grey */
+      margin-top: 10px;
     }
 
     @media (max-width: 500px) {
@@ -169,65 +108,33 @@
       }
 
       .input-container input {
-        border-radius: 12px 12px 0 0;
-        padding: 12px;
+        border-radius: 0.8rem;
       }
 
       .input-container button {
-        padding: 12px;
-        border-radius: 0 0 12px 12px;
-      }
-      
-      .box {
-        width: 280px;
-        height: 380px;
-        padding: 20px;
+        padding: 1rem;
+        border-radius: 0.8rem;
       }
     }
 
-    /* Loading spinner styles */
-    #loading-spinner {
-      display: none;
-      color: white;
-      margin-top: 15px;
+    .centered-text {
       text-align: center;
     }
 
+    /* Add styles for the loading spinner */
+    #loading-spinner {
+      display: none;
+      color: white;
+      margin-top: 10px;
+    }
+
     .fa-spinner {
-      animation: spin 1s linear infinite;
-      font-size: 24px;
-      display: inline-block;
+      animation: spin 2s linear infinite;
     }
 
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
-    }
-    
-    /* Style for the pair code */
-    #pair {
-      margin-top: 15px;
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
-    
-    #pair font {
-      display: inline-block;
-      padding: 10px 15px;
-      border-radius: 10px;
-      background: rgba(0, 0, 0, 0.3);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
-    
-    #pair font:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    }
-    
-    #pair font:active {
-      transform: translateY(1px);
     }
   </style>
 </head>
@@ -238,12 +145,12 @@
         <div id="text">
           <i class="fa fa-user"></i>
           <p>
-            <h3 class="centered-text">Link Robin DarkShadow MD v2  with phone number</h3>
+            <h3 class="centered-text">Link DarkShadow MD v2 with phone number</h3>
             <br>
-            <h6>🔢 Enter your number with country code. ROBIN WEB PAIR</h6>
+            <h6>🔢 Enter your number with country code.DarkShadow WEB PAIR</h6>
             <div class="input-container">
               <input placeholder="+94704xxxxxx" type="number" id="number" placeholder="❗ Enter your phone number with country code, DarkShadow WEB PAIR" name="">
-              <button id="submit">Submit ROBIN</button>
+              <button id="submit">Get Code</button>
             </div>
             <!-- Add the loading spinner -->
             <div id="loading-spinner">
@@ -271,7 +178,7 @@
       let text = document.getElementById("copy").innerText;
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
-      obj.innerText = "✔️ COPIED";
+      obj.innerText = ✔️ COPIED";
       obj.style = "color:blue;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
@@ -310,7 +217,7 @@
         a.innerHTML = ''; // Clear the previous content
         let { data } = await axios(`/code?number=${bc}`);
         let code = data.code || "❗ Service Unavailable";
-        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:blue;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:blue;font-weight:bold" size="5">CODE: <span style="color:black;font-weight:bold">' + code + '</span></font><br><br><br>';
         // Hide the loading spinner when the process is complete
         document.getElementById("loading-spinner").style.display = "none";
       }
