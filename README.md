@@ -60,7 +60,10 @@ Follow the steps below to set up the **Dark Shadow WhatsApp Bot**.
 To connect the bot to WhatsApp, use one of the following secure Pair Code Servers:  
 
 🔗 **[Server 1 - Pair Code](https://server1.darkshadowbot.com)**  
-🔗 **[Server 2 - Pair Code](https://server2.darkshadowbot.com)**  
+🔗 **[Server 2 - Pair Code](https://server2.darkshadowbot.com)** 
+<a href='https://lakamd-edb22d256a05.herokuapp.com' target="_blank">
+  <img alt='Pairing Code' src='https://img.shields.io/badge/Get%20Pairing%20Code-0076D2?style=for-the-badge&logo=opencv&logoColor=black'/>
+</a>
 
 These servers are secure and ensure seamless integration with your WhatsApp account.
 
