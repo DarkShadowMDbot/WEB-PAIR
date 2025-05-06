@@ -1,6 +1,6 @@
 # 🌑 Dark Shadow WhatsApp Bot
 
-![Dark Shadow WhatsApp Bot Banner](https://via.placeholder.com/1200x400.png?text=Dark+Shadow+WhatsApp+Bot)  
+![Dark Shadow WhatsApp Bot Banner](https://raw.githubusercontent.com/DarkShadowMDbot/BOT-HELPER/refs/heads/main/ChatGPT%20Image%20May%206%2C%202025%2C%2002_15_11%20PM.png)  
 *A modern and feature-rich bot for WhatsApp automation.*
 
 ---
